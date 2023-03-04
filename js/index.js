@@ -17,9 +17,9 @@ async function fetchApi(fristCurrency,secondCurrency){
     let myrespose=await fetch(`https://api.exchangerate-api.com/v4/latest/${fristCurrency}`);
     let mydata=await myrespose.json();
     let objData=mydata.rates;
-    console.log(objData)
+//     console.log(objData)
     let output=objData[`${secondCurrency}`]
-    console.log(output)
+//     console.log(output)
     secNum.value=+(output*fristNum.value).toFixed(2);
     transText.innerHTML=changeText(fristCurrency,output,secondCurrency)
 }
@@ -30,7 +30,7 @@ function changeText(fcur,sVal,sCur){
 }
 secNum.addEventListener("change",(event)=>{
     event.preventDefault();
-    console.log(event.target)
+//     console.log(event.target)
 })
 function exchange(){
     [mainCurrency.value,secCurrency.value]=[secCurrency.value,mainCurrency.value];
