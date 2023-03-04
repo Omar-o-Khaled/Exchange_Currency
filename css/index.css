@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background: #032433;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 9px solid white;
+    padding: 20px 40px;
+    border-radius: 36px;
+}
+.container .exchageImg{
+    height: 100px;
+}
+h2{
+
+}
+p.text{
+
+}
+.changeFrom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+select#mainCurrency,
+select#secCurrency,
+input#numbers{
+    font-size: 16px;
+    outline: 0;
+    padding: 2px 6px;
+    color: #032433;
+    background: #032433;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+}
+input#numbers{
+    text-align: end;
+
+}
+.swapandVlaue{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swapandVlaue .swap{
+    cursor: pointer;
+    background: #28a0ff;
+    padding: 4px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition-duration: .1s;
+}
+.swapandVlaue .swap:hover{
+    background:transparent;
+    box-shadow:0px 0px 6px 1px white;
+}
+
+.swapandVlaue .trans{
+    background: #757575;
+    padding: 4px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+
+}
+.changedTo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+select#secCurrency{
+
+}
+.secNum{
+    pointer-events: none;
+}
